@@ -19,7 +19,7 @@ body {
 .black a {
     color: rgb(128, 128, 128);
     text-decoration: underline;
-    text-align: 20px;
+    font-size: 24px;
 }
 
 h1{
