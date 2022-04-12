@@ -10,16 +10,16 @@ html, body {
 
 body {
     background-image: linear-gradient(to right, rgb(0, 204, 255) , rgb(0, 60, 255));
+    overflow-x: hidden;
 }
 
 .black {
-    color: rgb(58, 58, 58);
+    color: rgb(0, 0, 0);
 }
 
-.black a {
-    color: rgb(128, 128, 128);
+a {
+    color: darkblue;
     text-decoration: underline;
-    font-size: 24px;
 }
 
 h1{
@@ -64,7 +64,7 @@ h1{
         width: 100%;
         max-width: 300px;
     }
-    .image img:nth-child(2) {
+    .image figure:nth-child(2){
         display: none;
     }
 }
