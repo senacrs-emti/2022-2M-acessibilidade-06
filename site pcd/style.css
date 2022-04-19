@@ -56,6 +56,20 @@ h1{
     text-align: justify;
 }
 
+#menu {
+    left: 25%;
+    padding: 20px 0;
+    background-color: gray;
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    position: fixed;
+}
+
+#menu a {
+    color: black;
+}
+
 @media screen and (max-width:968px) {
     .box div {
         width: 100%;
