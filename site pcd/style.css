@@ -33,7 +33,6 @@ h2 {
         color: rgb(165, 164, 164);
         text-align: center;
         margin-bottom: 2%;
-        font-size: 20px;
 }
 
 .box{
@@ -92,6 +91,12 @@ h2 {
 
 p strong {
     font-size: 20px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+    float: right;
 }
 
 @media screen and (max-width:968px) {

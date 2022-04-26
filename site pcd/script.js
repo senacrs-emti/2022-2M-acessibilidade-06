@@ -12,5 +12,18 @@ $("body").keydown(function( event ) {
   }
 })
 
+function funcao(){
+  var x = $("body");
+  for ( var i = 0; i < x.length; i++) {
+  x[i].style.fontSize="1.5rem";
+  }
+  };
+
+  function funcao2(){
+    var x = $("body");
+    for ( var i = 0; i < x.length; i++) {
+    x[i].style.fontSize="";
+    }
+    };
 
 
