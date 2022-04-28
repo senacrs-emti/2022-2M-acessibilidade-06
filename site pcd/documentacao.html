@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<div id="box">
     <nav id="menu">
         <a tabindex="1" href="index.html">Home</a>
         <a tabindex="2" href="#">Documentação</a>
     </nav>
-    <main id="documentacao">
+    <div id="documentacao">
         <div class="text">
             <h1 tabindex="5">Documentação</h1>
             <h2>Clique Tab para navegar entre páginas</h2>
             <button tabindex="4" onclick="funcao2()">A-</button>
             <button tabindex="3" onclick="funcao()">A+</button>
-    <p tabindex="6">Nós criamos uma ferramenta com jquery que ao clicar “tab” abre um menu para uma pessoa navegar entre o conteúdo da página, para isso nós criamos primeiro o menu no html e personalizamos da maneira que queríamos no css, depois disso no js criamos uma variável chamada xTriggered que tem o valor de 0, então  <code>xTriggered = 0</code>. <br><br> Depois colocamos para o menu ficar com o ‘hide’ para ele começar sem aparecer na tela do usuário, então <code>$(“#menu”).hide</code>, depois colocamos uma função para quando a pessoa clicar uma tecla algum evento acontecer,<code> $(‘body’).keydown(function (event) { } )</code>, depois dentro dessa função criamos uma condição para quando a pessoa clicar tab a variável xTriggered ganhar mais 1 de valor, <code>$(‘body’).keydown(function (event) { if ( event.which == 9 ) { xTriggered++ } } )</code>, e por fim criamos uma verificação para quando a pessoa clicar 1 ou 2 vezes o tab o menu fica aberto e poder alternar entre as 2 opções que tem no menu,  
+    <p tabindex="6">Nós criamos uma ferramenta com jquery que ao clicar “tab” abre um menu para uma pessoa navegar entre o conteúdo da página, para isso nós criamos primeiro o menu no html e personalizamos da maneira que queríamos no css, depois disso no js criamos uma variável chamada xTriggered que tem o valor de 0, então:  <br><br><code>xTriggered = 0</code>. <br><br> Depois colocamos para o menu ficar com o ‘hide’ para ele começar sem aparecer na tela do usuário, então: <br><br><code>$(“#menu”).hide</code><br><br>Depois colocamos uma função para quando a pessoa clicar uma tecla algum evento acontecer:<br><br><code> $(‘body’).keydown(function (event) { } )</code><br><br>Depois dentro dessa função criamos uma condição para quando a pessoa clicar tab a variável xTriggered ganhar mais 1 de valor:<br> <br><code>$(‘body’).keydown(function (event) { if ( event.which == 9 ) { xTriggered++ } } )</code><br><br>E por fim criamos uma verificação para quando a pessoa clicar 1 ou 2 vezes o tab o menu fica aberto e poder alternar entre as 2 opções que tem no menu:  
 
-<code>$(‘body’).keydown(function (event) {  
+<br><br><code>$(‘body’).keydown(function (event) {  
 
 if ( event.which == 9 ) { 
 
@@ -39,11 +39,11 @@ Else {}
 
 } ) 
 
-</code> 
+</code></br>
 
 <br><br>No else colocamos para quando o “xTriggered” for apertado 2 vezes o menu irá desaparecer, então o código ficou assim:  
 
-<code> 
+<br><br><code> 
 
 Var = xTriggered = 0; 
 
@@ -71,7 +71,7 @@ $(#menu).hide()
 
 } ) 
  
-</code>
+</code> </br>
 </p> 
 </div>
 </main>
